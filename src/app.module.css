@@ -1,0 +1,179 @@
+.backgroundAdditional {
+  height          : 180px;
+  background-color: var(--gray-700);
+}
+
+main {
+  max-width     : 768px;
+  margin        : 0 auto;
+  padding       : 60px;
+  display       : flex;
+  flex-direction: column;
+  gap           : 54px;
+}
+
+main>header {
+  gap           : 54px;
+  display       : flex;
+  flex-direction: column;
+  align-items   : center;
+  margin-top    : -190px;
+}
+
+.createContainer {
+  display: flex;
+  gap    : 8px;
+  width  : 100%;
+}
+
+.createContainer input {
+  background-color: var(--gray-500);
+  padding         : 16px;
+  color           : var(--gray-100);
+  height          : 52px;
+  font-size       : 16px;
+  border          : 0;
+  border-radius   : 8px;
+  flex            : 1;
+}
+
+.createContainer input::placeholder {
+  color: var(--gray-300);
+}
+
+.createContainer input:focus {
+  outline: none;
+  border : 1px solid var(--purple-dark);
+}
+
+.createContainer>button {
+  border          : 0;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+  gap             : 8px;
+  background-color: var(--blue-dark);
+  padding         : 16px;
+  color           : var(--gray-100);
+  font-size       : 16px;
+  border-radius   : 8px;
+  transition      : background 0.3s;
+}
+
+.createContainer>button:hover {
+  background-color: var(--blue);
+}
+
+
+section>header {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+section>header>div {
+  display    : flex;
+  gap        : 8px;
+  font-weight: 700;
+  align-items: center;
+}
+
+.tasksCreated {
+  color: var(--blue);
+}
+
+.tasksConcluded {
+  color: var(--purple-dark);
+}
+
+section>header .counter {
+  background-color: var(--gray-400);
+  color           : var(--gray-200);
+  font-size       : 12px;
+  font-weight     : 700;
+  border-radius   : 14px;
+  height          : 19px;
+  padding         : 0 8px;
+
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+
+  white-space: nowrap;
+}
+
+.divider {
+  border-top             : 1px solid var(--gray-400);
+  border-radius          : 8px;
+  width                  : 100%;
+  height                 : 35px;
+  border-top-left-radius : 35px;
+  border-top-right-radius: 35px;
+
+  margin-top: 16px;
+}
+
+.tasksContainer {
+  display       : flex;
+  flex-direction: column;
+}
+
+.empty {
+  display        : flex;
+  flex-direction : column;
+  justify-content: center;
+  align-items    : center;
+  gap            : 8px;
+  color          : #fff;
+}
+
+.empty>strong {
+  margin-top: 24px;
+}
+
+.taskList {
+  display       : flex;
+  flex-direction: column;
+  gap           : 8px;
+  margin-top    : 24px;
+}
+
+.task {
+  display         : flex;
+  padding         : 16px;
+  border          : 1px solid var(--gray-400);
+  background-color: var(--gray-500);
+  border-radius   : 8px;
+  justify-content : space-between;
+  align-items     : flex-start;
+  gap             : 16px;
+  color           : var(--gray-100);
+  font-size       : 16px;
+}
+
+.done {
+  text-decoration: line-through;
+  color          : var(--gray-300);
+  cursor         : pointer;
+}
+
+.task>div {
+  display    : flex;
+  align-items: flex-start;
+  gap        : 16px;
+}
+
+.task label {
+  margin-top: -3px;
+  cursor    : pointer;
+}
+
+.task button {
+  border          : 0;
+  background-color: transparent;
+  transition      : filter 0.3s;
+}
+
+.task button:hover {
+  filter: brightness(1.5)
+}
